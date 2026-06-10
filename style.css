@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: white;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin-left: 18px;
+    text-decoration: none;
+}
+
+/* Sections */
+.section {
+    min-height: 100vh;
+    padding: 120px 60px 60px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*backgrounds images */
+.home {
+    background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+}
+.about {
+    background-image: url("https://images.unsplash.com/photo-1491841550275-ad7854e35ca6");
+}
+.courses {
+    background-image: url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+}
+.testimonials {
+    background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+}
+.faq {
+    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+}
+.contact {
+    background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+}
+
+/* Pop-out boxes */
+.content-box {
+    background: rgba(0,0,0,0.65);
+    padding: 40px;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+/* Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ffb703;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Grid */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Course cards */
+.course-card, .review-card, .faq-card {
+    background: rgba(0,0,0,0.65);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card span {
+    font-size: 32px;
+}
+
+.course-card:hover,
+.review-card:hover,
+.faq-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,183,3,0.8);
+}
+
+/* Contact */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
